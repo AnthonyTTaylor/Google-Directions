@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4504" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="0Dc-H5-6Z9">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3734.1"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="heq-kN-P8E">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="0Dc-H5-6Z9" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Rx6-7k-8Lh">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xrn-4W-HS5" kind="relationship" relationship="rootViewController" id="EAK-v2-E8W"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7NW-XG-ezo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-589" y="207"/>
+        </scene>
+        <!--Directions View Controller - GoogleMaps-->
+        <scene sceneID="UJ7-fT-HQn">
+            <objects>
+                <viewController id="xrn-4W-HS5" customClass="DirectionsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uPN-NY-akM"/>
+                        <viewControllerLayoutGuide type="bottom" id="aqj-qu-gMl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hut-7S-hZY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="GoogleMaps" id="O5R-jE-Che">
+                        <barButtonItem key="rightBarButtonItem" title="Directions" id="qPr-yy-Lxr">
+                            <connections>
+                                <action selector="showNiftySearchView:" destination="xrn-4W-HS5" id="SFi-x8-WAW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RE6-eM-Vgr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="159" y="89"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
